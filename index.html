@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="App"/>
+  <title>App</title>
+  
+  <script defer="defer" src="Fetches.js"></script>
+  <script defer="defer" src="Populate.js"></script>
+  <script defer="defer" src="DataHolder.js"></script>
+  <script defer="defer" src="UrlFunctions.js"></script>
+  <script defer="defer" src="FormFunctions.js"></script>
+  <script defer="defer" src="MessageFunctions.js"></script>
+  <script defer="defer" src="DistributeLocation.js"></script>
+  <script defer="defer" src="main.js"></script>
+  <script defer="defer" src="react-file.js"></script>
+  <link href="main.css" rel="stylesheet"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.css" rel="stylesheet">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div id="main">
+        <div id="messageBox">
+
+        </div>
+        <div>
+            <p class="formp">Województwo</p>
+            <select id="selectVoivodeship"></select>
+        </div>
+        <div>
+            <p class="formp">Miasto</p>
+            <select id="selectCity" disabled></select>
+        </div>
+        <div>
+            <p class="formp">Ulica</p>
+            <input type="text" id="inputStreet" name="inputStreet" placeholder="Ulica">
+        </div>
+        <div>
+            <p class="formp">Notatki </p>
+            <textarea id="inputNotes" name="inputNotes" rows="2" cols="40" placeholder="Notatki"></textarea>
+        </div>
+        <div>
+            <button type="button" class="button" id="buttonSend">Zapisz</button><button type="button" class="button buttonR" id="buttonReset">Reset</button>
+        </div>
+      <div>
+        <h3>Lista Nieruchomości</h3>
+        <table id="tableContent">
+        </table>
+    
+      </div>
+      <div id="root">
+
+      </div> 
+    </div>
+</body>
+    
+    
+</html>
